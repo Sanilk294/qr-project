@@ -4,56 +4,42 @@
   <meta charset="utf-8">
   <title>Product List</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
-      background: #f5f7fa;
-      margin: 0;
-      padding: 20px;
-    }
 
-    h1 {
-      text-align: center;
-      color: #1a3d7c;
-      font-size: 28px;
-      margin-bottom: 25px;
-    }
-
-    .product {
-      background: white;
-      padding: 18px;
-      margin-bottom: 14px;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .product:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    }
-
-    a {
-      text-decoration: none;
-      color: #0b50d8;
-      font-weight: 600;
-      font-size: 17px;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
+<body>
 <h1>Available Products</h1>
 
-{{range .}}
 <div class="product">
-  <a href="{{.Link}}" target="_blank">{{.ID}}. {{.Title}}</a>
+  <a href="https://www.amazon.in/s?k=Givi+ST611+Tanklock+Tank+Bag" target="_blank">
+    1. Givi ST611 Tanklock Tank Bag
+  </a>
 </div>
-{{end}}
+
+<div class="product">
+  <a href="https://www.amazon.in/s?k=balaclava" target="_blank">
+    2. Balaclava
+  </a>
+</div>
+
+<div class="product">
+  <a href="https://www.amazon.in/s?k=Royal+Enfield+Black+Adventure+Rider+Seat+KXA00427" target="_blank">
+    3. Royal Enfield Black Adventure Rider Seat KXA00427
+  </a>
+</div>
+
+<div class="product">
+  <a href="https://www.amazon.in/s?k=Rynox+Navigator+Frame+Bags+24L" target="_blank">
+    4. Rynox Navigator Frame Bags 24L
+  </a>
+</div>
+
+<div class="product">
+  <a href="https://www.amazon.in/gp/gift-card" target="_blank">
+    5. Amazon Voucher Card
+  </a>
+</div>
 
 </body>
 </html>
