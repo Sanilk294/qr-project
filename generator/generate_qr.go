@@ -49,8 +49,8 @@ func main() {
 	}
 
 	//siteURL := "http://localhost:10043/"
-	siteURL := "http://localhost:10043/list"
-	// siteURL := "https://YOUR_USERNAME.github.io/qr-project/list"
+	// siteURL := "http://localhost:10043/list"
+	siteURL := "https://Sanilk294.github.io/qr-project/list"
 	outputFile := filepath.Join(outDir, "site_qr.png")
 
 	err = qrcode.WriteFile(siteURL, qrcode.Medium, 512, outputFile)
